@@ -1,0 +1,76 @@
+/* Style global de la page Boutique */
+.container {
+    padding-top: 3rem;
+  }
+  
+  /* Titre de la page Boutique */
+  h1.text-center {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 3rem;
+  }
+  
+  /* Style des cartes de produits */
+  .card {
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre subtile autour de la carte */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Effet au survol de la carte */
+  .card:hover {
+    transform: translateY(-5px); /* Légère élévation */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Ombre plus forte au survol */
+  }
+  
+  /* Style de l'image du produit */
+  .card-img-top {
+    border-top-left-radius: 10px; /* Coins arrondis en haut */
+    border-top-right-radius: 10px; /* Coins arrondis en haut */
+    height: 250px;
+    object-fit: cover; /* Remplir l'espace sans déformer */
+  }
+  
+  /* Titre du produit */
+  .card-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Description du produit */
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  /* Prix du produit */
+  .card-text.text-primary {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ff9900; /* Couleur dorée pour le prix */
+  }
+  
+  /* Espacement entre les colonnes */
+  .col {
+    margin-bottom: 2rem;
+  }
+  
+  /* Responsiveness : Adaptation pour les petits écrans */
+  @media (max-width: 767px) {
+    h1.text-center {
+      font-size: 2rem; /* Taille réduite sur les petits écrans */
+    }
+  
+    .card-img-top {
+      height: 200px; /* Image plus petite sur mobile */
+    }
+  
+    .card {
+      box-shadow: none; /* Retirer l'ombre sur mobile pour alléger */
+    }
+  }
+  

@@ -1,0 +1,76 @@
+/* Style global de la page Jordan */
+.container {
+    padding-top: 3rem; /* Un peu d’espace en haut */
+  }
+  
+  /* Titre centré */
+  h1.text-center {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  /* Carte de produit */
+  .card {
+    border: none;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Ombre renforcée */
+  }
+  
+  /* Image de la chaussure */
+  .card-img-top {
+    border-top-left-radius: 10px; /* Coins arrondis en haut */
+    border-top-right-radius: 10px; /* Coins arrondis en haut */
+    height: 250px; /* Hauteur de l'image */
+    object-fit: cover; /* L’image prend toute la place sans déformation */
+  }
+  
+  /* Titre de la chaussure */
+  .card-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Description du produit */
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  /* Prix de la chaussure */
+  .card-text.text-primary {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ff9900; /* Couleur du prix en orange */
+  }
+  
+  /* Espacement des colonnes */
+  .col {
+    margin-bottom: 2rem;
+  }
+  
+  /* Responsiveness : Adaptation pour les petits écrans */
+  @media (max-width: 767px) {
+    h1.text-center {
+      font-size: 2rem; /* Réduction de la taille du titre sur mobile */
+    }
+  
+    .card {
+      box-shadow: none; /* Retirer l'ombre sur mobile pour alléger */
+    }
+  
+    .card-img-top {
+      height: 200px; /* Réduire la hauteur de l’image sur mobile */
+    }
+  }
+  
